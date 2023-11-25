@@ -79,5 +79,24 @@
   
   
   
+  <entry>
+    <title>Government Infrastructure Performance Navigator</title>
+    <link href="/2021/11/15/Navigator/"/>
+    <url>/2021/11/15/Navigator/</url>
+    
+    <content type="html"><![CDATA[<h2 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h2><p>The project is purposed to help users navigate the performance of some government infrastructure programs by visualising the complex inner dependencies among a huge number of projects, organisations, and vendors etc, with the help of graph databases.</p><p>The objectives that the project is to achieve are to help users better manage and understand the performance as well as the inner dependencies of stakeholders involved in some chosen government infrastructure program by developing a web application to achieve data visualization and finding potential risks or performance among many infrastructure projects. The number of entity types taken into consideration in the development process had been limited to three for higher viability, including Organizations, Projects, and Vendors.Entities are connecting with one another, and they could then form a huge and complex network. As changes in a project could have influences on a series of other projects that is coupling with it, the project should also be responsible for detecting risks caused by the continual changes.</p><img src="/2021/11/15/Navigator/data-view.png" class="" title="Data Visualisation"><h2 id="Key-Technologies"><a href="#Key-Technologies" class="headerlink" title="Key Technologies:"></a>Key Technologies:</h2><ul><li><strong>Django</strong>: a Python framework for web development</li><li><strong>Neo4j</strong>: a graph database management system</li><li><strong>Cyhper</strong>: Neo4j’s graph query language that lets you retrieve data from the graph</li></ul><h2 id="Key-Stakeholders"><a href="#Key-Stakeholders" class="headerlink" title="Key Stakeholders"></a>Key Stakeholders</h2><ul><li><a href="https://www.linkedin.com/in/jamiecerexhe/">Jamie Cerexhe</a> - Our client from Mastt</li><li><a href="https://www.linkedin.com/in/shah-dhruvil/?originalSubdomain=au">Dhruvil Shah</a> - Our supervisor from The University of Sydney</li><li>Dan F - From the Australian Federal Government</li><li>Development Team<ul><li><a href="https://www.linkedin.com/in/baocheng-wang-504b351a5/?originalSubdomain=au">Baocheng Wang</a></li><li><a href="https://www.linkedin.com/in/jiafei-tan-014244286/">Jiafei Tan</a> (me)</li><li><a href="https://www.linkedin.com/in/alan-kang-6497b5239/">Jian Kang</a></li><li>Heyang Li</li><li><a href="https://www.linkedin.com/in/penghui-wen-a00271265/?originalSubdomain=au">Penghui Wen</a></li></ul></li></ul><h2 id="Key-Implementations"><a href="#Key-Implementations" class="headerlink" title="Key Implementations"></a>Key Implementations</h2><ul><li>Rending and viewing data</li><li>Data filter</li><li>Data Insight</li><li>Running Cypher query</li><li>Cypher query management</li><li>Insight report</li></ul><h2 id="Project-Demo-Video"><a href="#Project-Demo-Video" class="headerlink" title="Project Demo Video"></a>Project Demo Video</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/VOSIN-odXWc" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h2 id="Disclaimer"><a href="#Disclaimer" class="headerlink" title="Disclaimer"></a>Disclaimer</h2><p>Because of the non-disclosure agreement signed with Mastt, this page only shows what we have shown with the university, excluding actual code, design documents, data related to government progject, etc.</p><h2 id="Related"><a href="#Related" class="headerlink" title="Related"></a>Related</h2><ul><li><a href="https://www.mastt.com/">Mastt</a></li><li><a href="https://www.sydney.edu.au/units/SOFT3888/2021-S2C-ND-RE">SOFT3888 Capstone Project</a></li><li><a href="https://neo4j.com/developer/graph-database/">Neo4j</a></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Project</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
   
 </search>

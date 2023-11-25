@@ -16,21 +16,26 @@
   <meta name="author" content="Jiafei Tan">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+    <meta name="description" content="Project BackgroundThis P2P file sharing system project is the first project for the University of Melbourne’s COMP90015 Distributed System Subject. This system is using a hybrid client&#x2F;server and">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://tanjiafei123.github.io/2023/11/24/hello-world/index.html">
+<meta property="og:title" content="Peer-to-Peer file sharing system">
+<meta property="og:url" content="https://tanjiafei123.github.io/2022/09/25/p2p/index.html">
 <meta property="og:site_name" content="Jiafei Tan">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="Project BackgroundThis P2P file sharing system project is the first project for the University of Melbourne’s COMP90015 Distributed System Subject. This system is using a hybrid client&#x2F;server and">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2023-11-24T00:36:00.464Z">
-<meta property="article:modified_time" content="2023-11-24T00:36:00.464Z">
+<meta property="og:image" content="https://tanjiafei123.github.io/2022/09/25/p2p/Server.png">
+<meta property="og:image" content="https://tanjiafei123.github.io/2022/09/25/p2p/Peer.png">
+<meta property="og:image" content="https://tanjiafei123.github.io/2022/09/25/p2p/Result.png">
+<meta property="article:published_time" content="2022-09-25T10:59:32.000Z">
+<meta property="article:modified_time" content="2023-11-25T10:40:10.315Z">
 <meta property="article:author" content="Jiafei Tan">
+<meta property="article:tag" content="Project">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://tanjiafei123.github.io/2022/09/25/p2p/Server.png">
   
   
   
-  <title>Hello World - Jiafei Tan</title>
+  <title>Peer-to-Peer file sharing system - Jiafei Tan</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -196,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Peer-to-Peer file sharing system"></span>
           
         </div>
 
@@ -207,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-11-24 11:36" pubdate>
-          November 24, 2023 am
+        <time datetime="2022-09-25 20:59" pubdate>
+          September 25, 2022 pm
         </time>
       </span>
     
@@ -219,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          367 words
+          2.1k words
         
       </span>
     
@@ -230,7 +235,7 @@
         
         
         
-          4 mins
+          18 mins
         
       </span>
     
@@ -267,24 +272,51 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hello World</h1>
+            <h1 id="seo-header">Peer-to-Peer file sharing system</h1>
             
             
               <div class="markdown-body">
                 
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure>
+                <h2 id="Project-Background"><a href="#Project-Background" class="headerlink" title="Project Background"></a>Project Background</h2><p>This P2P file sharing system project is the first project for the University of Melbourne’s COMP90015 Distributed System Subject. This system is using a hybrid client&#x2F;server and peer-to-peer architecture. In this architecture there are two components:</p>
+<ul>
+<li><strong>Index Server</strong> : a process that acts as a server, to manage an index of files and IP addresses of file sharers</li>
+<li><strong>Peer</strong> : a process that acts as both a client to an Index Server, and as a server for sharing file data with other Peers</li>
+</ul>
+<h2 id="Key-technologies"><a href="#Key-technologies" class="headerlink" title="Key technologies"></a>Key technologies</h2><ul>
+<li>Java</li>
+<li>Concurrency</li>
+<li>TCP&#x2F;IP Connection</li>
+<li>Distributed System</li>
+</ul>
+<h2 id="Server"><a href="#Server" class="headerlink" title="Server"></a>Server</h2><p>The Server accepts TCP connections and uses a request-per-connection session protocol as defined in <code>Server.java</code>. The session consists of a welcome message, an authentication step, and then a single request using a request-reply protocol.</p>
+<ul>
+<li><code>WelcomeMsg</code> : sent by the server as the first message on any new connection</li>
+<li><code>AuthenticateRequest</code> : sent by the client to request authentication</li>
+<li><code>AuthenticateReply</code> : sent by the server in response to a <code>AuthenticateRequest</code></li>
+</ul>
+<p>Following the handshake, a single request can be made, using one of the following messages:</p>
+<ul>
+<li><code>ShareRequest</code> : allows the Peer to provide the Index Server with details of a file to index</li>
+<li><code>DropShareRequest</code> : allows the Peer to request the Index Server to remove the details of a file that it previously indexed</li>
+<li><code>SearchRequest</code> : allows the Peer to search for files on the Index Server</li>
+<li><code>LookupRequest</code> : allows the Peer to obtain a list of Peers that are sharing a given file</li>
+</ul>
+<p>Each of the requests above has an accompanying reply message from the Server.</p>
+<p>The server can be run locally or deployed to run on a cloud server. You can specify the IP address and port number of the server when you start the server. If you don’t, the default IP address is localhost and the port number is 3200.</p>
+<img src="/2022/09/25/p2p/Server.png" srcset="/img/loading.gif" lazyload class="" title="Server running">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure>
+<h2 id="Peer"><a href="#Peer" class="headerlink" title="Peer"></a>Peer</h2><p>The Peer uses a terminal text GUI that is best run in a UNIX&#x2F;Linux terminal. When the application runs the <code>h</code> key can be pressed for help on using the application.</p>
+<p>In the peer GUI, there are range of features that users can operate:</p>
+<ul>
+<li><code>File Share</code> : allows the Peer to share a file in the local computer</li>
+<li><code>Search</code> : allows the Peer to search files that have been shared by other peers</li>
+<li><code>Config</code> : allows the Peer to config the server’s IP address that they want to connect</li>
+<li><code>Download</code> : allows the Peer to download the files that was searched</li>
+</ul>
+<img src="/2022/09/25/p2p/Peer.png" srcset="/img/loading.gif" lazyload class="" title="Peer running">
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="Key-achievement"><a href="#Key-achievement" class="headerlink" title="Key achievement"></a>Key achievement</h2><p>The final score for this project was 9.5&#x2F;10. The system was able to successfully share a one or two gigabyte sized video while successfully downloading and playing it within the allotted time.</p>
+<img src="/2022/09/25/p2p/Result.png" srcset="/img/loading.gif" lazyload class="" title="Result">
 
                 
               </div>
@@ -294,6 +326,13 @@
               <div class="post-metas my-3">
   
   
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/Project/" class="print-no-link">#Project</a>
+      
+    </div>
+  
 </div>
 
 
@@ -302,8 +341,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>https://tanjiafei123.github.io/2023/11/24/hello-world/</div>
+      <div>Peer-to-Peer file sharing system</div>
+      <div>https://tanjiafei123.github.io/2022/09/25/p2p/</div>
     </div>
     <div class="license-meta">
       
@@ -315,7 +354,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>November 24, 2023</div>
+          <div>September 25, 2022</div>
         </div>
       
       
@@ -347,21 +386,15 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/24/Jiafei-Tan/" title="Jiafei Tan">
+                      <a href="/2022/11/12/White-Board/" title="White Board">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Jiafei Tan</span>
+                        <span class="hidden-mobile">White Board</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
-                    
-                      <a href="/2023/07/20/Virtual-Doctor/" title="Virtual Doctor Platform">
-                        <span class="hidden-mobile">Virtual Doctor Platform</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
                     
                   </article>
                 </div>

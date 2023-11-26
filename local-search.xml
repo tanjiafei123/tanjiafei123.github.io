@@ -23,6 +23,25 @@
   
   
   <entry>
+    <title>SOGA, A Scavenger-Hunt Online Game App</title>
+    <link href="/2023/11/20/SOGA/"/>
+    <url>/2023/11/20/SOGA/</url>
+    
+    <content type="html"><![CDATA[<p>Scavenger-Hunt Online Game App (SOGA) is an game application developed based on Android. Team members are students from the COMP90018 Mobile Computing Systems Programming course at the University of Melbourne.</p><h2 id="Project-Introduction"><a href="#Project-Introduction" class="headerlink" title="Project Introduction"></a>Project Introduction</h2><p>SOGA is an Android App for creating, sharing, and playing scavenger hunts of your own design. This game is designed for people to go hiking outdoors or explore the city while playing the game.</p><p>In this app, there are range of predefined options that users can choose to join in，such as Melbourne City Hunt. During the game, users can guess the target location through the hints of the current level. After the user reaches the target location, the user can complete the level task and start the next level after passing the task. Once finishing, the game history will be stored.</p><p>Apart from predefinded game, users are able to create their own game by selecting sites and choosing task of each site. In your customized game, call your friends to join the game and compete together. In the process of playing games, the purpose of socialization and exploration is achieved</p><h2 id="Key-Techonlogies"><a href="#Key-Techonlogies" class="headerlink" title="Key Techonlogies"></a>Key Techonlogies</h2><p>Main technologies involved:</p><ul><li>Android Studio</li><li>Java</li><li>Google Maps APIs</li><li>Firebase Database</li><li>Firebase Authentication</li></ul><h2 id="Key-Implementations"><a href="#Key-Implementations" class="headerlink" title="Key Implementations"></a>Key Implementations</h2><h3 id="User-management"><a href="#User-management" class="headerlink" title="User management"></a>User management</h3><p>The APP allows users to register and log in to the APP. All authentication information is supported and stored in the Firebase Authentication Server.</p><!-- <img src="/2023/11/20/SOGA/login.png" class="" title="Login"> --><img src="login.png" alt="Login" width="200"><h3 id="Home-page"><a href="#Home-page" class="headerlink" title="Home page"></a>Home page</h3><p>In the Home page, there are a number of functionalities, including:</p><ul><li>Join a featured or predefined hunt game</li><li>Create a hunt game by own</li><li>Join a customized hunt game</li><li>Check hunt game history</li><li>Logout</li></ul><p>All configration data is stored in the Firebase Database.</p><!-- <img src="/2023/11/20/SOGA/home.png" class="" title="Home"> --><img src="home.png" alt="Home" width="200"><h3 id="Game-page"><a href="#Game-page" class="headerlink" title="Game page"></a>Game page</h3><p>During the hunt game, the app uses Google map API to track the user’s location. Once arriving at the correct site, the user must finish a small task before going to the next site.</p><p>Tasks include:</p><ul><li>Hold the phone for 30 second</li><li>Spin in place 10 times</li><li>Jump 10 times</li></ul><p>All tasks are accomplished through the phone’s built-in sensors.</p><!-- <img src="/2023/11/20/SOGA/game.png" class="" title="Game page"> --><img src="game.png" alt="Game" width="200"><h2 id="Project-Demo-Video"><a href="#Project-Demo-Video" class="headerlink" title="Project Demo Video"></a>Project Demo Video</h2><div class="video-container"><iframe src="https://www.youtube.com/embed/1MiiHA9jV5c" frameborder="0" loading="lazy" allowfullscreen></iframe></div><h2 id="Related"><a href="#Related" class="headerlink" title="Related"></a>Related</h2><ul><li><a href="https://handbook.unimelb.edu.au/subjects/comp90018">COMP90018 Mobile Computing Systems Programming</a></li><li><a href="https://firebase.google.com/">Firebase</a></li></ul>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>Project</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Virtual Doctor Platform</title>
     <link href="/2023/07/20/Virtual-Doctor/"/>
     <url>/2023/07/20/Virtual-Doctor/</url>
